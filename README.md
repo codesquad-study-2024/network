@@ -2,9 +2,9 @@
 
 ## 멤버
 
-| <img src="https://avatars.githubusercontent.com/u/87357932?v=4" width="150" height="150"/> | <img src="https://avatars.githubusercontent.com/u/110711591?v=4" width="150" height="150"/> | <img src="https://avatars.githubusercontent.com/u/71365547?v=4" width="150" height="150"/> |
-|:------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
-|                     yelly<br/>[@Yeriimii](https://github.com/Yeriimii)                     |                  Eunseon Kim<br/>[@seondays](https://github.com/seondays)                   |              Taeyoung Kwak<br/>[@sharpie1330](https://github.com/sharpie1330)              |
+|<img src="https://avatars.githubusercontent.com/u/87357932?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/110711591?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/71365547?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/57825133?v=4" width="150" height="150"/>|
+|:-:|:-:|:-:|:-:|
+|yelly<br/>[@Yeriimii](https://github.com/Yeriimii)|Eunseon Kim<br/>[@seondays](https://github.com/seondays)|Taeyoung Kwak<br/>[@sharpie1330](https://github.com/sharpie1330)|Lee SuHyeon<br/>[@growth-mango](https://github.com/growth-mango)|
 
 ## 스터디 책
 <figure>
