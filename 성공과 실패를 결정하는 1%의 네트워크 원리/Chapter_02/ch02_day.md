@@ -22,7 +22,8 @@
 송신처에서 수신처에 도착하기까지 라우터와 허브라는 중계 장치들을 거쳐서 패킷이 이동하게 된다.
 
 허브는 이더넷의 규칙에 따라, 라우터는 IP의 규칙에 따라 패킷을 운반하는데 이는 각각 MAC 헤더와 IP 헤더의 제어 정보에 따른다.
-![스크린샷 2024-07-31 오후 1.39.38.png](..%2F..%2F..%2F..%2FDesktop%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-07-31%20%EC%98%A4%ED%9B%84%201.39.38.png)
+
+<img width="961" alt="스크린샷 2024-07-31 오후 5 05 05" src="https://github.com/user-attachments/assets/92bfab35-47c2-464a-9a67-c2e929908810">
 
 #### 패킷 송수신 동작의 개요
 TCP에서 TCP 헤더 + 데이터 조각 상태의 패킷을 IP에게 넘겨주면, IP는 이 패킷 앞에 다시 IP 헤더와 MAC 헤더를 추가한다.
@@ -34,7 +35,7 @@ MAC 헤더에는 이더넷과 같은 LAN을 사용하여 올바른 위치로 가
 
 전송 후 회신되는 패킷을 받는 것은 이와 반대의 순서대로 이루어진다.
 
-![스크린샷 2024-07-31 오후 1.17.36.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fdv%2Ftwrl1xh519jf5w8vhq16hq3m0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_rs85bF%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-07-31%20%EC%98%A4%ED%9B%84%201.17.36.png)
+<img width="1034" alt="스크린샷 2024-07-31 오후 4 56 42" src="https://github.com/user-attachments/assets/c13b260f-83e2-4a8d-a3b6-7eb3bfeb00ab">
 
 #### 수신처 IP 주소를 기록한 IP 헤더 만들기
 IP 헤더에는 수신처의 IP 주소, 송신처의 IP 주소, 프로토콜 버전 등의 정보가 담긴다.
@@ -54,7 +55,8 @@ ARP는 Address Resolution Protocol의 약자로, 이더넷에서 연결되어 �
 
 또한 ARP 캐시를 이용하여 매번 방송하지 않아도 빠르게 MAC 주소를 알아낼 수도 있다.
 #### 이더넷의 기본
-![스크린샷 2024-07-31 오후 1.17.19.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fdv%2Ftwrl1xh519jf5w8vhq16hq3m0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_PriQtl%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-07-31%20%EC%98%A4%ED%9B%84%201.17.19.png)
+
+<img width="612" alt="스크린샷 2024-07-31 오후 5 02 11" src="https://github.com/user-attachments/assets/1bd236a1-7927-45be-885c-22a632444687">
 
 #### IP 패킷을 전기나 빛의 신호로 변환하여 송신한다
 이제 MAC 헤더까지 붙이게 되면, LAN 어댑터가 패킷의 디지털 데이터를 전기나 빛의 신호로 변환하여 네트워크 케이블에 송출한다.
@@ -62,7 +64,8 @@ ARP는 Address Resolution Protocol의 약자로, 이더넷에서 연결되어 �
 LAN 어댑터는 사용 전에 초기 설정과 이상 검사, MAC 회로에 MAC 주소를 설정하는 초기화 동작이 필요하다. 이 동작은 OS가 기동될 때 수행된다.
 
 #### 패킷에 3개의 제어용 데이터를 추가한다
-![스크린샷 2024-07-31 오후 1.17.59.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fdv%2Ftwrl1xh519jf5w8vhq16hq3m0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_bX4utZ%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-07-31%20%EC%98%A4%ED%9B%84%201.17.59.png)
+
+<img width="1100" alt="스크린샷 2024-07-31 오후 5 02 48" src="https://github.com/user-attachments/assets/822a0895-9817-4f6a-8fbf-5c8063bff07b">
 
 #### 허브를 향해 패킷을 송신한다
 이제 허브를 향해 패킷을 보내는데, 리피터 허브를 사용하는 경우 반이중 모드, 스위칭 허브를 사용하는 경우 전이중 모드의 두 가지 방법이 있다.
@@ -72,4 +75,5 @@ LAN 어댑터는 사용 전에 초기 설정과 이상 검사, MAC 회로에 MAC
 
 반이중 모드에서 만약 서로의 신호가 뒤섞이는 경우 충돌이 발생하는데, 이 경우 충돌을 알리기 위해 재밍 신호라는 것을 이용하게 된다.
 #### 돌아온 패킷을 받는다 & 받은 패킷을 IP에서 TCP로 넘긴다
-![스크린샷 2024-07-31 오후 1.18.26.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fdv%2Ftwrl1xh519jf5w8vhq16hq3m0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_pHxIZR%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-07-31%20%EC%98%A4%ED%9B%84%201.18.26.png)
+
+<img width="978" alt="스크린샷 2024-07-31 오후 5 03 22" src="https://github.com/user-attachments/assets/f6a6cd1d-494d-4d26-8d55-671137cf0f9b">
