@@ -7,13 +7,15 @@
   - 우체국이 편지 내용에 관심없는 것과 같다.
 
 ## 2 LAN 케이블은 신호를 약화시키지 않는 것이 핵심이다
-![리피터와 LAN](https://gist.github.com/user-attachments/assets/54ccf76f-3b51-4b0f-bb09-506cdd2942cd)
+![리피터-LAN](https://github.com/user-attachments/assets/2fa9ff5c-b4fe-4e4f-bf54-560cdefdadcb)
+
 - 패킷은 LAN 어댑터의 PHY(MAU) 회로에서 전기 신호로 변환된다.
 - 변환된 신호(패킷)는 RJ-45 커넥터에 연결된 케이블(트위스티드 페어 케이블)에 들어간다.
   - 신호는 플러스(+)와 마이너스(-) 신호 단자에서 흘러나온다.
   - 케이블은 8개의 구리선으로 되어있고, 4개만 사용된다. (2쌍만 사용)
 
-![신호](https://gist.github.com/user-attachments/assets/145d9e4e-1721-460d-84a3-44ba4d4a5932)
+![신호 변형](https://github.com/user-attachments/assets/c0366376-11ac-4ef0-9e5d-65344fe5a9e3)
+
 - 케이블의 길이가 길어질수록 신호가 약해진다.
 - 높은 주파수는 멀어질수록 신호가 약해지는 정도(신호 감쇄)가 심해진다.
   - 즉, 급격하게 변화가 줄어들어 각이 뭉개진다.
@@ -39,11 +41,12 @@
 - 하지만 플러스 선과 마이너스 선이 맞닿는 곳에서 서로 상쇄되어 노이즈 전류만 상쇄된다.
 
 ### 크로스토크(crosstalk)
-![크로스토크](https://mblogthumb-phinf.pstatic.net/20140603_287/kwshop89_1401777052021YQBlr_JPEG/UTP-TWIST_%B3%BB%BA%CE.jpg?type=w2)
+![크로스토크](https://github.com/user-attachments/assets/b0615a53-767d-4866-8c3a-d6982a40531b)
 - 같은 케이블 내부에서 맞닿는 신호선에서 발생하는 전자기파
 - 신호선을 꼬는 간격을 미세하게 다르게 해서 해결한다.
 ![꼬는 간격 다르게 하기](https://mblogthumb-phinf.pstatic.net/20140603_182/kwshop89_1401777051853R98oN_JPEG/LS-CAT5E-Cable_04.jpg?type=w2)
 ![간격이 동일](https://gist.github.com/user-attachments/assets/239bfc41-f1a7-4b20-8826-59f9db9f3ab8)
+
 
 ### STP(Shielded Twisted-Pair)
 - 전자파를 차단하기 위해 `금속성의 실드(차폐)라는 피복`을 입힌 트위스티드 페어 케이블
@@ -57,7 +60,7 @@
 - 패킷이 폐기 --> TCP 계층까지 전달이 되지 않음 --> ACK 응답을 보내지 않음 --> 송신처 `프로토콜 스택의 TCP 담당`이 ACK 를 못받았기 때문에 패킷을 재전송
 
 ### 신호를 주고 받기 위한 커넥터 연결
-![리피터와 LAN](https://gist.github.com/user-attachments/assets/54ccf76f-3b51-4b0f-bb09-506cdd2942cd)
+![리피터-LAN](https://github.com/user-attachments/assets/2fa9ff5c-b4fe-4e4f-bf54-560cdefdadcb)
 - 신호를 제대로 수신하려면, 송신측 송신 단자(플러스, 마이너스 선)에서 보낸 신호를 수신측 수신 단자(플러스, 마이너스 선)에 연결
   - 한쪽이 송신만 하기 때문에 다른 한쪽은 수신만 해야하는 원리
   - 따라서 신호를 수신하려면 `수신측 PHY(MAU) 회로`와 `교차(MDI-X)`시켜서 연결
@@ -66,8 +69,9 @@
 - 허브의 커넥터 부분(RJ-45)은 보통 `MDI-X` 형태
   - 허브끼리 접속하려면 한 쪽은 `MDI`로 설정해야 한다.
   - 만약 연결하려는 허브들의 모든 커넥터가 `MDI-X` 라면 `크로스 케이블`을 사용한다.
-  - ![크로스 케이블 2](https://gist.github.com/user-attachments/assets/5cf840f9-a0ef-4280-abb1-607e38faff32)
+  - ![크로스 케이블 2](https://github.com/user-attachments/assets/d4761023-ec2c-426e-a836-e9d82d558b11)
+
 - PC 끼리 (= LAN 어댑터 끼리) 접속하려면?
   - LAN 어댑터의 커넥터 부분(RJ-45)은 `MDI` 형태
   - 따라서 `크로스 케이블`을 사용하면 된다.
-  - ![크로스 케이블](https://gist.github.com/user-attachments/assets/5a726a47-7aaf-4c3d-bef1-32479e861a3a)
+  - ![크로스 케이블](https://github.com/user-attachments/assets/46896e75-616e-4514-9dc6-18244c73d1b8)
